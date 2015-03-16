@@ -1,0 +1,14 @@
+<div ng-app='sailsExample' ng-controller='sailsExampleCrtl'>
+<h1>Chat Example</h1>
+            <ul ng-repeat ='mensaje in mensajes'>
+                    <li>
+                        <span>{{mensaje.mensaje}}</span>
+                    </li>
+            </ul>
+            <div class="row">
+                    <div class="col-md-1"><label for="mensaje"> Message :</label></div>
+                    <div class="col-md-6"><input ng-model="mensaje" type="text" class="form-control"></div>
+                    <div class="col-md-2"><button ng-click="enviar()" type="button" class="btn btn-success">Send</button></div>
+            </div>
+</div>
+</div>
